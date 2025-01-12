@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Welcome, {{ username }}</h2>
+<h3>Your Grades:</h3>
+<ul>
+    {% for grade in grades %}
+        <li>{{ grade.subject }}: {{ grade.grade }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
